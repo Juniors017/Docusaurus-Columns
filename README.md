@@ -1,44 +1,10 @@
-[![Deploy to GitHub Pages](https://github.com/Juniors017/Docusaurus-base/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Juniors017/Docusaurus-base/actions/workflows/deploy.yml)
-
 
 # Website
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-### Installation
+Docusaurus utilizes the Infima framework for styling layout. The components described here are fully based on the Infima grid system.
 
-```
-$ yarn
-```
+With this component, you will be able to easily create columns on demand according to the Infima grid. This provides great flexibility for structuring your content and creating attractive, responsive layouts. Whether you need a simple single-column layout or a complex layout with multiple columns, this component will allow you to achieve it quickly and efficiently. Harness the power of the Infima grid system to make your documentation clear, concise, and aesthetically pleasing.
 
-### Local Development
-
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Demo url = https://juniors017.github.io/Docusaurus-Columns/ 
