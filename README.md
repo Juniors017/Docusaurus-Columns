@@ -1,6 +1,8 @@
 
 # Website
 
+## Columns components
+
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 Docusaurus utilizes the Infima framework for styling layout. The components described here are fully based on the Infima grid system.
