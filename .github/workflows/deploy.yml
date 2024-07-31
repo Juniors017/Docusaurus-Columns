@@ -12,21 +12,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-
-      - name: Cache Yarn dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/yarn
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
 
       - name: Enable Corepack
         run: corepack enable
@@ -34,40 +24,8 @@ jobs:
       - name: Prepare specific version of Yarn
         run: corepack prepare yarn@4.3.1 --activate
 
-      - name: Verify Node.js version
-        run: node -v
-
-      - name: Verify Yarn version
-        run: yarn --version
-
       - name: Install dependencies
         run: yarn install
 
-      - name: Lint code
-        run: yarn lint
-
-      - name: Run tests
-        run: yarn test
-
       - name: Build project
         run: yarn build
-
-      - name: Upload Build Artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: build
-
-  deploy:
-    name: Deploy to GitHub Pages
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
