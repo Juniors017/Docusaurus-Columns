@@ -20,8 +20,15 @@ jobs:
           node-version: 18
           cache: yarn
 
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Prepare specific version of Yarn
+        run: corepack prepare yarn@4.3.1 --activate
+
       - name: Install dependencies
-        run: yarn install 
+        run: yarn install
+
       - name: Build website
         run: yarn build
 
