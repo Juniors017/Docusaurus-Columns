@@ -1,7 +1,8 @@
 
 # Website
 
-## Columns components
+## Columns components 
+[![Build and Deploy](https://github.com/Juniors017/Docusaurus-Columns/actions/workflows/deploy.yml/badge.svg)](https://github.com/Juniors017/Docusaurus-Columns/actions/workflows/deploy.yml)
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
