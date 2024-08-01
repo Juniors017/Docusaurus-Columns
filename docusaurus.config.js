@@ -74,7 +74,7 @@ const config = {
           },
           
           {
-            to: 'https://github.com/https://github.com/Juniors017/Docusaurus-Columns?tab=repositories',
+            to: 'https://github.com/Juniors017/Docusaurus-Columns',
             label: 'GitHub',
             position: 'left',
           },

@@ -22,7 +22,7 @@ function HomepageHeader() {
       <div className=""></div>
     </div>
     <div className="col col--3 text--center padding-horiz--md">
-      <div className="" > <img src="./img/docux.png" style={{borderRadius:'50%'}}></img></div>
+      <div className="" > <img src="./img/columns.png" style={{borderRadius:'50%'}}></img></div>
    
     </div> 
     <div className="col col--6 text--center  ">
